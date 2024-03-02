@@ -3,8 +3,15 @@ from rest_framework import serializers
 from education.models import Course, Lesson
 
 
+class LessonSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Lesson
+        fields = '__all__'
+
+
 class CourseSerializer(serializers.ModelSerializer):
     num_lessons = serializers.SerializerMethodField()
+    lesson_list = serializers.SerializerMethodField()
 
     class Meta:
         model = Course
@@ -14,9 +21,6 @@ class CourseSerializer(serializers.ModelSerializer):
         """Метод для подсчета количества уроков, входящих в курс"""
         return Lesson.objects.filter(course=course).count()
 
-
-
-class LessonSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Lesson
-        fields = '__all__'
+    def get_lesson_list(self, course):
+        """Метод для вывода списка уроков, входящих в курс"""
+        return [lesson.lesson_name for lesson in Lesson.objects.filter(course=course)]
