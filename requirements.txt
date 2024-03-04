@@ -11,3 +11,4 @@ requests~=2.31.0
 setuptools~=65.5.0
 djangorestframework~=3.14.0
 django-filter
+djangorestframework-simplejwt
