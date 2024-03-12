@@ -1,0 +1,669 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-03-12T10:43:26.155Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "hgv: jhbgj",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-03-12T10:43:59.666Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "hgv: jhbgj: hgbhjhgb - jhjk",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-03-12T10:47:29.514Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "test@tast.com - None",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-03-12T10:48:13.622Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "курс1: ...",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-03-12T10:48:24.859Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "hgv: jhbgj",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-03-12T10:48:42.219Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "курс2: ...",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-03-12T10:49:05.685Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "курс1: ...: урок1 - ...",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-03-12T10:49:23.743Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "курс1: ...: урок2 - ...",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-03-12T10:49:47.710Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "курс2: ...: урок вводный - ...",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-03-12T10:50:57.968Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "elenovatest@yandex.ru - None: курс1: ... None5000 card 2024-03-12 10:50:57.961934+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-03-12T10:51:17.765Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "test@tast.com - None: None курс1: ...: урок1 - ...100 card 2024-03-12 10:51:17.761132+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add курс",
+      "content_type": 6,
+      "codename": "add_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change курс",
+      "content_type": 6,
+      "codename": "change_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete курс",
+      "content_type": 6,
+      "codename": "delete_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view курс",
+      "content_type": 6,
+      "codename": "view_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add урок",
+      "content_type": 7,
+      "codename": "add_lesson"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change урок",
+      "content_type": 7,
+      "codename": "change_lesson"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete урок",
+      "content_type": 7,
+      "codename": "delete_lesson"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view урок",
+      "content_type": 7,
+      "codename": "view_lesson"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add пользователь",
+      "content_type": 8,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change пользователь",
+      "content_type": 8,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete пользователь",
+      "content_type": 8,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view пользователь",
+      "content_type": 8,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add платеж",
+      "content_type": 9,
+      "codename": "add_payment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change платеж",
+      "content_type": 9,
+      "codename": "change_payment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete платеж",
+      "content_type": 9,
+      "codename": "delete_payment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view платеж",
+      "content_type": 9,
+      "codename": "view_payment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "education",
+      "model": "course"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "education",
+      "model": "lesson"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "users",
+      "model": "payment"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "kktzplvbyth6p707411l2hsgk6dfgv3r",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAoRcCl-56BDMyMVA0kpV0Z765NutDtf-_9l4iwrSVunZY4o7gILU6_W4L8oLoDvEO9NZlbXZc5yV2RB-1yakjP6-H-HRTo5VuzycBjyAGZ02jgHFgBaQuWBje4gBbJISmffHLAxkNO3nI2bLQyPIr3Bx23OS8:1rjzbD:joXD-NzQaju5fo0gX_Q0PMJaCm2Lpw4Hx-zk8HTL9KI",
+      "expire_date": "2024-03-26T10:43:11.386Z"
+    }
+  },
+  {
+    "model": "education.course",
+    "pk": 2,
+    "fields": {
+      "name": "курс1",
+      "preview": "",
+      "description": "...",
+      "owner": 2
+    }
+  },
+  {
+    "model": "education.course",
+    "pk": 3,
+    "fields": {
+      "name": "курс2",
+      "preview": "",
+      "description": "...",
+      "owner": 1
+    }
+  },
+  {
+    "model": "education.lesson",
+    "pk": 2,
+    "fields": {
+      "lesson_name": "урок1",
+      "lesson_description": "...",
+      "lesson_preview": "",
+      "lesson_url": null,
+      "course": 2,
+      "owner": 2
+    }
+  },
+  {
+    "model": "education.lesson",
+    "pk": 3,
+    "fields": {
+      "lesson_name": "урок2",
+      "lesson_description": "...",
+      "lesson_preview": "",
+      "lesson_url": null,
+      "course": 2,
+      "owner": 2
+    }
+  },
+  {
+    "model": "education.lesson",
+    "pk": 4,
+    "fields": {
+      "lesson_name": "урок вводный",
+      "lesson_description": "...",
+      "lesson_preview": "",
+      "lesson_url": null,
+      "course": 3,
+      "owner": null
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$KathoW5pKU3AaHj9eXLhNB$lrMhcgi/qpt5ezIS5r7J22MMhwjwyy+m3r1udnFbh/U=",
+      "last_login": "2024-03-12T10:43:11.385Z",
+      "is_superuser": true,
+      "first_name": "Elena",
+      "last_name": "Elenova",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-12T10:42:03.326Z",
+      "email": "elenovatest@yandex.ru",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "12345",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "test",
+      "last_name": "test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-12T10:46:37Z",
+      "email": "test@tast.com",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "payments_date": "2024-03-12T10:50:57.961Z",
+      "paid_course": 2,
+      "paid_lesson": null,
+      "payment_sum": 5000,
+      "payment_method": "card"
+    }
+  },
+  {
+    "model": "users.payment",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "payments_date": "2024-03-12T10:51:17.761Z",
+      "paid_course": null,
+      "paid_lesson": 2,
+      "payment_sum": 100,
+      "payment_method": "card"
+    }
+  }
+]
