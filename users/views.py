@@ -43,12 +43,14 @@ class UserUpdateView(generics.UpdateAPIView):
 
 
 class UserListView(generics.ListAPIView):
+    """Класс для просмотра списка пользователей"""
     serializer_class = UserSerializer
     queryset = User.objects.all()
     permission_classes = [IsAuthenticated]
 
 
 class UserDeleteView(generics.DestroyAPIView):
+    """Класс для удаления пользователя"""
     serializer_class = UserSerializer
     queryset = User.objects.all()
     permission_classes = [IsAuthenticated]
