@@ -51,6 +51,7 @@ class Payment(models.Model):
 
 
 class Subscription(models.Model):
+    """Класс подписки на курс"""
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='пользователь')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, null=True, blank=True, verbose_name='курс')
 
