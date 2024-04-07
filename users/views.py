@@ -2,13 +2,14 @@ import requests
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import generics, status
 from rest_framework.filters import OrderingFilter
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from education.models import Course
 from users.models import Payment, User, Subscription
 from users.serializers import PaymentsSerializer, UserRegisterSerializer, UserSerializer
+from users.services import create_stripe_price, create_stripe_session, create_stripe_product
 
 
 class UserRegisterView(generics.CreateAPIView):
@@ -55,6 +56,19 @@ class UserDeleteView(generics.DestroyAPIView):
     serializer_class = UserSerializer
     queryset = User.objects.all()
     permission_classes = [IsAuthenticated]
+
+
+class PaymentsCreate(generics.CreateAPIView):
+    serializer_class = PaymentsSerializer
+    permission_classes = [AllowAny]
+
+    def perform_create(self, serializer):
+        payment = serializer.save()
+        stripe_prod_id = create_stripe_product(payment)
+        stripe_price_id = create_stripe_price(payment, stripe_prod_id)
+        payment.payment_link, payment.payment_id = create_stripe_session(stripe_price_id)
+        payment.save()
+
 
 
 class PaymentListAPIView(generics.ListAPIView):
