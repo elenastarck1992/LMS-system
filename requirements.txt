@@ -25,3 +25,5 @@ sqlparse==0.4.4
 Strip==0.0.1.dev14
 uritemplate==4.1.1
 urllib3==2.2.1
+celery
+redis

@@ -7,6 +7,7 @@ from education.models import Course, Lesson
 from education.paginators import CustomPagination
 from education.permissions import IsOwner, IsModerator
 from education.serializers.education import CourseSerializer, LessonSerializer
+from education.tasks import send_mail_update_course
 
 
 class CourseViewSet(ModelViewSet):
@@ -18,6 +19,12 @@ class CourseViewSet(ModelViewSet):
     def perform_create(self, serializer):
         """Метод для автоматической привязки курса к создателю"""
         serializer.save(owner=self.request.user)
+
+    def perform_update(self, serializer):
+        """Метод для запуска функции отправки уведомлений об обновлении курса"""
+        update_course = serializer.save()
+        send_mail_update_course.delay(update_course.id)
+        update_course.save()
 
     def get_permissions(self):
         """Метод описания доступов к действиям с уроками"""
