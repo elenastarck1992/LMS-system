@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_celery_beat'
+    'django_celery_beat',
     'django_filters',
     'rest_framework_simplejwt',
     'drf_yasg',
@@ -103,8 +103,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('POSTGRES_DB_DOCKER'),
         'USER': os.getenv('POSTGRES_USER'),
-        'HOST': os.getenv('DB_HOST_DOCKER'),
-        'PASSWORD': os.getenv('DATABASES_PASSWORD')
+        'HOST': 'db',
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD')
     }
 }
 
