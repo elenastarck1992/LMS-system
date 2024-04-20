@@ -87,15 +87,15 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # Настройки базы данных для запуска проекта локально
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB'),
-        'USER': os.getenv('POSTGRES_USER'),
-        'PORT': os.getenv('POSTGRES_PORT'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD')
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('POSTGRES_DB'),
+#         'USER': os.getenv('POSTGRES_USER'),
+#         'PORT': os.getenv('POSTGRES_PORT'),
+#         'PASSWORD': os.getenv('POSTGRES_PASSWORD')
+#     }
+# }
 
 # Настройки базы данных для запуска проекта через Docker
 DATABASES = {
@@ -109,7 +109,6 @@ DATABASES = {
 }
 
 
-# Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [

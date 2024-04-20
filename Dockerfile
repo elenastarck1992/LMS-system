@@ -1,10 +1,8 @@
 #Используем базовый образ Python
-FROM python:3
+FROM python:alpine
 
 # Устанавливаем рабочую директорию в контейнере
 WORKDIR /code
-
-ENV PATH /root/.local/bin:$PATH
 
 # Копируем зависимости в контейнер
 COPY requirements.txt .
